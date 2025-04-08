@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Extrair Dados da Planilha Excel</title>
+  <link rel="stylesheet" href="inserirPlanilha.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+</head>
+<body>
+  <h1>📊 Upload de Planilha Excel</h1>
+
+  <div class="upload-container">
+    <input type="file" id="fileInput" accept=".xlsx, .xls" />
+    <button id="processButton">📥 Processar Planilha</button>
+  </div>
+
+  <div class="filtro-container" id="filtroContainer" style="display: none;">
+    <label for="filtroDescricao"><strong>Filtrar por descrição:</strong></label>
+    <input type="text" id="filtroDescricao" placeholder="Digite parte da descrição..." />
+</div>
+
+
+  <div id="output"></div>
+
+  <script src="inserirPlanilha.js"></script>
+</body>
+</html>
